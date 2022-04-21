@@ -1,2 +1,17 @@
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+   background-image: url(img/bgsky.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.brush {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255),rgba(255,0,0,0));
+}
+

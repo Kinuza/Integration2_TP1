@@ -10,14 +10,17 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Accueil - Pokémon</title>
   </head>
+ 
+ <body class="bg">
 
- <!-- Nav supérieure -->
- <body>
+  <!-- Nav supérieure -->
+
+  <div class="row">
  <header>
-  <img src="img/banner.webp" alt="Bannière Pokémmon" class="w-100"/>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="img/banner.webp" alt="Bannière Pokémmon" class="col w-100"/>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light col">
     <a class="navbar-brand" href="accueil.html">
       <img src="/img/logo.png" alt="Logo du site" />
     </a>
@@ -36,13 +39,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil</a>
+          <a class="nav-link col" href="#">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="creation.html">Création</a>
+          <a class="nav-link col" href="creation.html">Création</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="personnage.html">Mes Pokémons</a>
+          <a class="nav-link col" href="personnage.html">Mes Pokémons</a>
         </li>
       </ul>
       <form class="form-inline my-1 my-lg-0">
@@ -62,6 +65,7 @@
       </form>
     </div>
   </nav>
+</div>
 
   <!-- Breadcrumbs -->
 
@@ -75,49 +79,39 @@
 </header>
 
 
-  <main class="row">
+  <main class="row p-5">
  
 <!-- Nav à gauche -->
-<div class="col lg-2"></div>
-  <ul class="nav flex-sm-column">
-    <li class="nav-item">
-      <a class="nav-link active" href="accueil.html">Accueil</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-  </ul>
-</div>
 
+<div class="col lg-2">
+<nav class="nav flex-column">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+</div>
 
   <!-- Carousel -->
 
-  <div id="carouselDark" class="carousel carousel-dark slide col-lg-5 row" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Pokémon Arceus"></button>
-      <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Pokémon Darkrai"></button>
-      <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Pokémon Palkia"></button>
-    </div>
+  <div id="carouselDark" class="carousel carousel-dark slide carousel-fade col-lg-5 row" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="img/arceus.png" class="d-block" alt="Pokémon Arceus">
+      <div class="carousel-item active" data-bs-interval="10000" data-bs-pause="hover">
+        <img src="img/arceus.png" class="d-block w-100 h-100" alt="Pokémon Arceus">
         <div class="carousel-caption d-none d-md-block">
-          <h5>ARCEUS</h5>
+          <h5 class="brush display-3">ARCEUS</h5>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="img/darkrai.png" class="d-block" alt="Pokémon Darkrai">
+        <img src="img/darkrai.png" class="d-block w-100 h-100" alt="Pokémon Darkrai">
         <div class="carousel-caption d-none d-md-block">
-          <h5>DARKRAI</h5>
+          <h5 class="brush display-3">DARKRAI</h5>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
-        <img src="img/palkia.png" class="d-block" alt="Pokémon Palkia">
+        <img src="img/palkia.png" class="d-block w-100 h-100" alt="Pokémon Palkia">
         <div class="carousel-caption d-none d-md-block">
-          <h5>PALKIA</h5>
+          <h5 class="brush display-3">PALKIA</h5>
         </div>
       </div>
     </div>
@@ -133,9 +127,9 @@
 
 <!-- Bloc de texte -->
 
-  <div class="col-lg-5 row">
-  <p class="col-md" >LOREM</p>
-  <p class="col-md">LOREM2</p>
+  <div class="col-lg-5 row p-5">
+  <p class="display-1 text-center" >ATTRAPEZ-LES TOUS!</p>
+  <p class="fs-2 text-wrap justify">Votre aventure se déroule dans la vaste majesté naturelle de la région de Hisui, où vous embarquez dans des missions d’observation de votre base dans Rusti-Cité. Le Mont Couronné s’élève au centre, entouré de tous les côtés par des zones aux environnements distincts.</p>
 </div>
 
 </main>
